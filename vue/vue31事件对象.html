@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="vue.min.js"></script>
+    <style type="text/css">
+        body,html{width:100%;height:100%}
+    </style>
+</head>
+<!-- 多余传参 -->
+<body @click='changed(10,$event)'>
+
+   
+    <script type="text/javascript"> 
+        new Vue({
+            el: 'body',
+            methods: {
+                changed:function(event,l){
+                    console.log(event,l)
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>

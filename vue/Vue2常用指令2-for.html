@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src='vue.min.js'></script>
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <!-- <div v-for='i in arr'>{{i}}{{$index}}</div> -->
+    <!-- $index 索引值 
+    a0
+    b1
+    c2-->
+    <!-- <div v-for='i in json'>{{i}}</div> -->
+    <!-- 输出
+    18
+    29
+    20-->
+    <div v-for='(key,value) in json'>{{key}}=>{{value}}</div>
+    <!-- 输出
+    leo=>18
+    sky=>29
+    mot=>20 -->
+    <div v-for='i in json'>{{$key}}=>{{i}}</div>
+    <!-- 输出
+    leo=>18
+    sky=>29
+    mot=>20 -->
+    <div v-for='i in json'>{{$key}}=>{{i}}=>{{$index}}</div>
+    <!-- 输出
+    leo=>18=>0
+    sky=>29=>1
+    mot=>20=>2
+     -->
+
+
+
+    <script type="text/javascript">
+        new Vue({
+            el: 'body',
+            data: {
+                arr: ['a', 'b', 'c'],
+                json: {
+                    leo: '18',
+                    sky: '29',
+                    mot: '20',
+                }
+            }
+        })
+        //var=['a','b','c']
+    </script>
+
+</body>
+
+</html>

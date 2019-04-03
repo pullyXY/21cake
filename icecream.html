@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>面包_生日蛋糕网上订购_生日蛋糕预订_21客/二十一客蛋糕官网</title>
+    <style>
+        body {
+            color: #684029;
+            min-width: 1200px;
+            height: 80px;
+            overflow: auto;
+            font-family: 'PingFang SC', 'Heiti SC', '微软雅黑', Helvetica, Arial;
+            font-size: 14px;
+            display: block;
+
+        }
+
+        body,
+        div,
+            {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: inline-block;
+            list-style-type: none;
+            overflow: hidden;
+        }
+
+        .nav-box>li {
+            float: left;
+            margin-left: 20px;
+            margin-right: 20px
+        }
+
+        a:link,
+        a:visited {
+            color: #684029;
+
+            text-decoration: none;
+        }
+
+        .header-logo,
+        .right-nav,
+        .city {
+            display: inline-block;
+        }
+
+        .right-nav {
+            vertical-align: middle;
+            height: 51px;
+            margin-left: 12px;
+            line-height: 51px;
+        }
+
+        .header-box {
+            margin-left: 70px;
+
+        }
+
+        .header-logo {
+            vertical-align: middle;
+        }
+
+        .nav-box {
+            vertical-align: middle;
+        }
+
+        .app_download {
+            cursor: pointer;
+            display: inline-block;
+            margin-left: 60px;
+            margin-right: 20px;
+        }
+
+        .message {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .city {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .login {
+            margin-left: 12px;
+        }
+
+        .app_download:hover+.hiddenBox {
+            transition: all 0.3s;
+            height: 120px;
+        }
+
+        .hiddenBox {
+
+            transition: all 0.3s;
+            position: absolute;
+            left: -36px;
+            top: 35px;
+            width: 120px;
+            height: 0px;
+
+        }
+
+        .hiddenBox:hover {
+            transition: all 0.3s;
+            height: 120px;
+        }
+
+        .poBox {
+            position: relative;
+            display: inline-block;
+        }
+
+        .cityBox {
+            /* 转为行内块 */
+            display: inline-block;
+            /*相对定位*/
+            position: relative;
+
+        }
+
+        /* 放到city上，hiddenCity藏起来 */
+        .city:hover+.hiddenCity {
+            transition: all 0.3s;
+            display: block;
+            height: 240px;
+
+
+        }
+
+        .hiddenCity {
+            transition: all 0.3s;
+            display: none;
+            position: absolute;
+            left: -5px;
+            top: 40px;
+            width: 40px;
+            height: 0;
+
+
+        }
+
+        .messageBox {
+            display: inline;
+            position: relative
+        }
+
+        .message:hover+.hiddenmessagelist {
+            display: block;
+            transition: all 0.3s;
+        }
+
+        .hiddenmessagelist {
+
+            display: none;
+            transition: all 0.3s;
+            position: absolute;
+            left: -5px;
+            top: 12px;
+            width: 40px;
+
+        }
+
+        .hiddenmessagelist:hover {
+            transition: all 0.3s;
+            height: 120px;
+
+        }
+
+        .home:hover {
+            color: chocolate;
+        }
+
+        .cake:hover {
+            color: chocolate;
+        }
+
+        .bread:hover {
+            color: chocolate;
+        }
+
+        .coffeetea:hover {
+            color: chocolate;
+        }
+
+        .outcoffee:hover {
+            color: chocolate;
+        }
+
+        .iceream:hover {
+            color: chocolate;
+        }
+
+        .qyzone:hover {
+            color: chocolate;
+        }
+
+        .app_download:hover {
+            color: chocolate;
+        }
+
+        .message:hover {
+            color: chocolate;
+        }
+
+        .dl:hover {
+            color: chocolate;
+        }
+
+        .zc:hover {
+            color: chocolate;
+        }
+
+        .ewm {
+            display: inline-block;
+        }
+
+        .toptextdiv {
+            width: 80%;
+            /* background:beige; */
+            margin-left: 80px;
+            margin-top: 25px;
+            margin-bottom: 35px;
+        }
+
+        .oneline {
+            height: 1px;
+            background: #684029;
+        }
+
+        .onediv {
+            width: 100%;
+            background: white;
+            font-size: 12px;
+        }
+
+        .onediv ul li {
+            float: left;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .onediv ul {
+            vertical-align: middle;
+        }
+
+        .onediv span {
+            display: inline-block;
+        }
+
+
+        .topimgdiv ul {
+            list-style: none;
+        }
+
+        .topimgdiv ul li {
+            float: left;
+            margin-left: 18px;
+            margin-right: 18px;
+            text-align: center;
+        }
+
+        /* a标签变成小椭圆 */
+        .onelable a {
+            display: inline-block;
+            border: 1px solid #D5BFA7;
+            border-radius: 100px;
+            padding: 0 6px 0 8px;
+            color: #D5BFA7;
+            margin: 8px 3px;
+        }
+
+        h3:hover {
+            color: #BB9772;
+        }
+
+        .onecart:hover {
+            color: #BB9772;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-box">
+        <div class="header">
+            <div class="header-nav">
+                <a class="header-logo" href="/">
+                    <img src="images/21cake_logo.png" height="44" width="120" />
+                </a>
+                <ul class="nav-box">
+                    <li><a class="home" href="./index.html ">首页</a></li>
+                    <li><a class="cake" href="./cake.html ">蛋糕</a></li>
+                    <li><a class="bread" href="./bread.html ">面包</a></li>
+                    <li><a class="iceream" href="./icecream.html">冰淇淋</a></li>
+                    <li><a class="coffeetea" href="./coffeetea.html ">咖啡下午茶</a></li>
+                    <li><a class="outcoffee" href="./outcoffee.html "> 咖啡全国送</a></li>
+                    <li><a class="qyzone" href="./qyzone.html ">企业专区</a></li>
+                </ul>
+                <div class="right-nav">
+                    <div class="poBox">
+                        <a class="app_download">app下载</a>
+                        <ul class="hiddenBox">
+                            <li>
+                                <a class="ewm">
+                                    <img src="/21cake/images/footer-erweima.png" height="120px" width="120px">
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="cityBox">
+                        <a class="city">北京</a>
+
+                        <ul class="hiddenCity">
+                            <li><a>上海</a></li>
+                            <li><a>天津</a></li>
+                            <li><a>杭州</a></li>
+                            <li><a>无锡</a></li>
+                            <li><a>杭州</a></li>
+                            <li><a>广州</a></li>
+                            <li><a>深圳</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="messageBox">
+                        <a class="message">消息</a>
+
+                        <ul class="hiddenmessagelist">
+                            <li> <a href="">通知</a></li>
+                            <li> <a href="">物流</a></li>
+                        </ul>
+                    </div>
+
+                    <span class="login">
+                        <a class="dl" href="">登录</a>/<a class="zc" href="">注册</a>
+                    </span>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- 头部 -->
+    <div class="toptextdiv">
+        <div class="oneline"></div>
+        <div class="onediv">
+            <span>分类</span>
+            <ul>
+                <li>全部分类</li>
+                <li>蛋糕</li>
+                <li>冰激凌</li>
+                <li>咖啡下午茶</li>
+                <li>常温蛋糕</li>
+                <li>设计师礼品</li>
+                <li>面包</li>
+            </ul>
+        </div>
+        <div class="onediv">
+            <span>口味</span>
+            <ul>
+                <li>全部口味</li>
+                <li>乳脂奶油</li>
+                <li>慕斯</li>
+                <li>乳酪</li>
+                <li>巧克力</li>
+                <li>坚果</li>
+                <li>水果</li>
+                <li>含酒</li>
+                <li>咖啡</li>
+                <li>冰激凌</li>
+            </ul>
+        </div>
+        <div class="oneline"></div>
+    </div>
+    <div class="topimgdiv">
+        <ul>
+            <li>
+                <img src="/21Cake/images/朗姆芝士.png">
+                <h3>百利甜情人</h3>
+                <span>¥298.00/2.0磅</span>
+                <!-- 小椭圆 -->
+                <div class="onelable">
+                    <a href="/">情侣 &gt;</a>
+                    <a href="/">人气 &gt;</a>
+                    <a href="/">生日 &gt;</a>
+                </div>
+                <a href="" class="onecart">
+                    <i></i>
+                    加入购物车
+                </a>
+
+            </li>
+            <li>
+                <img src="/21Cake/images/朗姆芝士.png">
+                <h3>黑白巧克力慕斯</h3>
+                <span>¥298.00/2.0磅</span>
+                <!-- 小椭圆 -->
+                <div class="onelable">
+                    <a href="/">情侣 &gt;</a>
+                    <a href="/">生日 &gt;</a>
+                    <a href="/">人气 &gt;</a>
+                </div>
+                <a href="" class="onecart">
+                    <i></i>
+                    加入购物车
+                </a>
+            </li>
+            <li>
+                <img src="/21Cake/images/朗姆芝士.png">
+                <h3>可可岛</h3>
+                <span>¥298.00/2.0磅</span>
+                <!-- 小椭圆 -->
+                <div class="onelable">
+                    <a href="/">聚会 &gt;</a>
+                    <a href="/">新品 &gt;</a>
+                </div>
+                <a href="" class="onecart">
+                    <i></i>
+                    加入购物车
+                </a>
+
+            </li>
+            <li>
+                <img src="/21Cake/images/朗姆芝士.png">
+                <h3>草莓奶油蛋糕</h3>
+                <span>¥298.00/2.0磅</span>
+                <!-- 小椭圆 -->
+                <div class="onelable">
+                    <a href="/">情侣 &gt;</a>
+                    <a href="/">人气 &gt;</a>
+                    <a href="/">情人节 &gt;</a>
+                </div>
+                <a href="" class="onecart">
+                    <i></i>
+                    加入购物车
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="/21Cake/images/朗姆芝士.png">
+                <h3>百利甜情人</h3>
+                <span>¥298.00/2.0磅</span>
+                <!-- 小椭圆 -->
+                <div class="onelable">
+                    <a href="/">情侣 &gt;</a>
+                    <a href="/">人气 &gt;</a>
+                    <a href="/">生日 &gt;</a>
+                </div>
+                <a href="" class="onecart">
+                    <i></i>
+                    加入购物车
+                </a>
+
+            </li>
+            <li>
+                <img src="/21Cake/images/朗姆芝士.png">
+                <h3>黑白巧克力慕斯</h3>
+                <span>¥298.00/2.0磅</span>
+                <!-- 小椭圆 -->
+                <div class="onelable">
+                    <a href="/">情侣 &gt;</a>
+                    <a href="/">生日 &gt;</a>
+                    <a href="/">人气 &gt;</a>
+                </div>
+                <a href="" class="onecart">
+                    <i></i>
+                    加入购物车
+                </a>
+            </li>
+            <li>
+                <img src="/21Cake/images/朗姆芝士.png">
+                <h3>可可岛</h3>
+                <span>¥298.00/2.0磅</span>
+                <!-- 小椭圆 -->
+                <div class="onelable">
+                    <a href="/">聚会 &gt;</a>
+                    <a href="/">新品 &gt;</a>
+                </div>
+                <a href="" class="onecart">
+                    <i></i>
+                    加入购物车
+                </a>
+
+            </li>
+            <li>
+                <img src="/21Cake/images/朗姆芝士.png">
+                <h3>草莓奶油蛋糕</h3>
+                <span>¥298.00/2.0磅</span>
+                <!-- 小椭圆 -->
+                <div class="onelable">
+                    <a href="/">情侣 &gt;</a>
+                    <a href="/">人气 &gt;</a>
+                    <a href="/">情人节 &gt;</a>
+                </div>
+                <a href="" class="onecart">
+                    <i></i>
+                    加入购物车
+                </a>
+            </li>
+        </ul>
+        
+
+    </div>
+    <!-- 底部导航 -->
+    <div class="shade"></div>
+    <div class="footer">
+        <img class="footer-logo" src="images/21cake_logo.png" height="36" width="96" alt="">
+        <div class="footer-nav">
+            <a href="">联系我们</a>
+            <span>|</span>
+            <a href="">订购帮助</a>
+            <span>|</span>
+            <a href="">企业合作</a>
+            <span>|</span>
+            <a href="">生产经营资质</a>
+            <span>|</span>
+            <a href="">公告专区</a>
+        </div>
+        <div class="footer-weibo">
+            <a href=" " target=" ">
+                <img src="">
+            </a>
+            <a class="footer-weixin">
+                <div class="footer-erweima">
+                    <img src="">
+                </div>
+                <img src=" ">
+            </a>
+            <a class="footer-app">
+                <div class="footer-app">
+                    <img src=" ">
+                </div>
+                APP
+            </a>
+        </div>
+
+        <div class="footer-text">
+            <span>订购专线：400 650 2121（服务时间 08:00–22:00）</span>
+            <span>客服电话：021-23099721（全国） | kefu@21cake.com（邮箱）</span>
+            <span>杭州/广州：提前5小时预订；北京：提前6小时预订；上海：提前5.5-6小时预订；天津/苏州/无锡/深圳：提前8小时预订（部分偏远地区除外，当日22点以后订单，于次日8点开始审核） </span>
+            <span>当日蛋糕配送截止下单时间：北京：16:50；上海：16:30；杭州/广州：13:50；天津：10:30；苏州/无锡/深圳：11:00</span>
+            <span>网站注册公司名称: 北京廿一客食品有限公司 地址: 北京市北京经济技术开发区兴海二街5号院3号楼 </span>
+        </div>
+        <div class="footer-copyright">
+            <span>Copyright© 21Cake蛋糕官网商城 2007-2018, 版权所有 <a style="color: #9a9a9a" target="_blank"
+                    href="http://www.miitbeian.gov.cn/">京ICP备14006254号-1</a></span>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

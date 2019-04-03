@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>21Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+    <link rel="stylesheet" href="https://www.swiper.com.cn/dist/css/swiper.min.css">
+    <style>
+        ul {
+            margin: 0;
+        }
+
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        body {
+            color: #684029;
+            min-width: 1200px;
+            height: 80px;
+            overflow: auto;
+            font-family: 'PingFang SC', 'Heiti SC', '微软雅黑', Helvetica, Arial;
+            font-size: 14px;
+            display: block;
+        }
+
+        body,
+        div,
+            {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        ul {
+            display: inline-block;
+            list-style-type: none;
+            /* overflow: hidden; */
+        }
+
+        .nav-box>li {
+            float: left;
+            margin-left: 20px;
+            margin-right: 20px
+        }
+
+        a:link,
+        a:visited {
+            color: #684029;
+
+            text-decoration: none;
+        }
+
+        .header,
+        .header-nav {
+            height: 80px;
+        }
+
+        .header-logo,
+        .right-nav,
+        .city {
+            display: inline-block;
+        }
+
+        .right-nav {
+            float: left;
+            height: 80px;
+            margin-left: 12px;
+            line-height: 80px;
+        }
+
+        .header-box {
+            height: 80px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: white;
+            z-index: 999;
+        }
+
+
+        .header-logo {
+            float: left;
+            padding-left: 70px;
+            margin-top: 18px;
+        }
+
+        .nav-box {
+            height: 80px;
+            line-height: 80px;
+            float: left;
+        }
+
+        .app_download {
+            cursor: pointer;
+            display: inline-block;
+            margin-left: 60px;
+            margin-right: 20px;
+        }
+
+        .message {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .city {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .login {
+            margin-left: 12px;
+        }
+
+        .app_download:hover+.hiddenBox {
+            transition: all 0.3s;
+            height: 120px;
+        }
+
+        .hiddenBox {
+
+            transition: all 0.3s;
+            position: absolute;
+            left: -17px;
+            top: 60px;
+            width: 120px;
+            height: 0px;
+            z-index: 999;
+            overflow: hidden;
+
+        }
+
+        .hiddenBox:hover {
+            transition: all 0.3s;
+            height: 120px;
+        }
+
+        .poBox {
+            position: relative;
+            display: inline-block;
+        }
+
+        .cityBox {
+            /* 转为行内块 */
+            display: inline-block;
+            /*相对定位*/
+            position: relative;
+
+        }
+
+        /* 放到city上，hiddenCity藏起来 */
+        .city:hover+.hiddenCity {
+            transition: all 0.3s;
+            display: block;
+            height: 240px;
+
+
+        }
+
+        .hiddenCity li {
+            padding-top: 10px;
+        }
+
+        .hiddenCity {
+            transition: all 0.3s;
+            display: none;
+            position: absolute;
+            line-height: 30px;
+            left: -5px;
+            top: 50px;
+            width: 80px;
+            height: 0;
+            padding: 0;
+            text-align: center;
+            z-index: 999;
+            background: white;
+
+
+        }
+
+        .messageBox {
+            display: inline;
+            position: relative
+        }
+
+        .message:hover+.hiddenmessagelist {
+            display: block;
+            transition: all 0.3s;
+        }
+
+        .hiddenmessagelist {
+
+            /* display: none;
+            transition: all 0.3s;
+            position: absolute;
+            left: -5px;
+            top: 12px;
+            width: 40px; */
+            transition: all 0.3s;
+            display: none;
+            position: absolute;
+            line-height: 30px;
+            left: -5px;
+            top: 50px;
+            width: 80px;
+            height: 0;
+            padding: 0;
+            text-align: center;
+            /* z-index: 999; */
+            background: white;
+        }
+
+        .hiddenmessagelist li{
+            padding-top: 10px;
+        }
+
+        .hiddenmessagelist:hover {
+            transition: all 0.3s;
+            height: 120px;
+
+        }
+
+        .home:hover {
+            color: chocolate;
+        }
+
+        .cake:hover {
+            color: chocolate;
+        }
+
+        .bread:hover {
+            color: chocolate;
+        }
+
+        .coffeetea:hover {
+            color: chocolate;
+        }
+
+        .outcoffee:hover {
+            color: chocolate;
+        }
+
+        .iceream:hover {
+            color: chocolate;
+        }
+
+        .qyzone:hover {
+            color: chocolate;
+        }
+
+        .app_download:hover {
+            color: chocolate;
+        }
+
+        .message:hover {
+            color: chocolate;
+        }
+
+        .dl:hover {
+            color: chocolate;
+        }
+
+        .zc:hover {
+            color: chocolate;
+        }
+
+        .ewm {
+            display: inline-block;
+        }
+
+        .lunbotu {
+            height: 500px;
+            margin-bottom: 30px;
+        }
+
+        .thdiv {
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        .thdiv ul {
+            /* 充满整个屏幕100% */
+            width: 100%;
+            padding: 0;
+        }
+
+        .thdiv li {
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.06);
+            margin-left: 5px;
+            margin-right: 5px;
+            float: left;
+            height: 100px;
+            /* 父级元素的% */
+            width: calc(20% - 10px);
+        }
+
+        .fordiv {
+            /* 隐藏溢出 */
+            overflow: hidden;
+            /* 块级元素居中 margin：0 auto; 0是上和下，auto有宽度才生效 */
+            /* 行内元素居中 text-align:center */
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        .saleul {
+            margin: 0 auto;
+            width: 80%;
+
+        }
+
+        .saleul li img {
+            width: 542px;
+            margin-left: 60px;
+            background-size: auto 100%;
+            display: block;
+        }
+
+        .keul {
+            margin-left: 43px;
+        }
+
+        .keul li {
+            float: left;
+            display: list-item;
+            text-align: -webkit-match-parent;
+            /* padding:2px 10px 2px 10px; */
+        }
+
+        .keul li img {
+
+            width: 542px;
+            margin: 0 auto;
+            margin-left: 15px;
+            margin-right: 15px;
+            background-size: auto 100%;
+            display: block;
+        }
+
+        .lis {
+            /* 浮动使li同行显示 */
+            float: left;
+            /* calc自定义比例设置宽度 */
+            width: calc(25% - 20px);
+            /* 设置左边距 */
+            margin-left: 10px;
+            /* 设置右边距 */
+            margin-right: 10px;
+        }
+
+        .keul li p span:last-child {
+            color: #AD814B;
+            display: inline-block;
+        }
+
+        .shade {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            z-index: 999;
+            display: none;
+        }
+        .hidden{
+            width:100%;
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-box">
+        <div class="header">
+            <div class="header-nav">
+                <a class="header-logo" href="/">
+                    <img src="images/21cake_logo.png" height="44" width="120" />
+                </a>
+                <ul class="nav-box">
+                    <li><a class="home" href="./index.html ">首页</a></li>
+                    <li><a class="cake" href="./cake.html ">蛋糕</a></li>
+                    <li><a class="bread" href="./bread.html ">面包</a></li>
+                    <li><a class="iceream" href="./icecream.html">冰淇淋</a></li>
+                    <li><a class="coffeetea" href="./coffeetea.html ">咖啡下午茶</a></li>
+                    <li><a class="outcoffee" href="./outcoffee.html "> 咖啡全国送</a></li>
+                    <li><a class="qyzone" href="./qyzone.html ">企业专区</a></li>
+                </ul>
+                <div class="right-nav">
+                    <div class="poBox">
+                        <a class="app_download">app下载</a>
+                        <ul class="hiddenBox">
+                            <li>
+                                <a class="ewm">
+                                    <img src="/21cake/images/footer-erweima.png" height="120px" width="120px">
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="cityBox">
+                        <a class="city">北京</a>
+
+                        <ul class="hiddenCity">
+                            <li><a>上海</a></li>
+                            <li><a>天津</a></li>
+                            <li><a>杭州</a></li>
+                            <li><a>无锡</a></li>
+                            <li><a>杭州</a></li>
+                            <li><a>广州</a></li>
+                            <li><a>深圳</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="messageBox">
+                        <a class="message">消息</a>
+
+                        <ul class="hiddenmessagelist">
+                            <li> <a href="">通知</a></li>
+                            <li> <a href="">物流</a></li>
+                        </ul>
+                    </div>
+
+                    <span class="login">
+                        <a class="dl" href="">登录</a>/<a class="zc" href="">注册</a>
+                    </span>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="hidden">
+
+    </div>
+    <div class="lunbotu">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"
+                    style="background: url(https://static.21cake.com//upload/images/891a9948c137385a8d7c8f8456146822.jpg); background-size: 100%">
+                </div>
+                <div class="swiper-slide" 
+                    style="background: url(https://static.21cake.com//upload/images/d2631f0bd2c8168f7df0a6907664428e.jpg);background-size: 100%">Slide 2</div>
+                <div class="swiper-slide"
+                    style="background: url(https://static.21cake.com//upload/images/d2631f0bd2c8168f7df0a6907664428e.jpg);background-size: 100%">Slide 3</div>
+                <div class="swiper-slide"
+                    style="background: url(https://static.21cake.com//upload/images/d2631f0bd2c8168f7df0a6907664428e.jpg);background-size: 100%">Slide 4</div>
+                <div class="swiper-slide"
+                    style="background: url(https://static.21cake.com//upload/images/d2631f0bd2c8168f7df0a6907664428e.jpg);background-size: 100%">Slide 5</div>
+               
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+        </div>
+    </div>
+    <div class="thdiv">
+        <ul>
+            <li><img src="/21Cake/images/xinpin.jpg"></li>
+            <li><img src="/21Cake/images/shengri.png"></li>
+            <li><img src="/21Cake/images/ertong.png"></li>
+            <li><img src="/21Cake/images/juhui.png"></li>
+            <li><img src="/21Cake/images/huodongzhuanqu.png"></li>
+        </ul>
+
+    </div>
+
+    <h4 style="font-size: 20px;width: 80%; margin: 30px auto">新品<span style="font-size: 16px">/专区</span></h4>
+    <div class=fordiv>
+        <img src="/21Cake/images/fordiv.jpg">
+    </div>
+    <ul style="width: 80%;height: 350px;margin: 30px auto;margin-top:10px; display: block">
+        <li class="lis">
+            <img src="/21Cake/images/草莓奶油.png" style="width: 100%; height: 230px;">
+            <!-- <div style="width: 100%; height: 230px; background: black"></div> -->
+            <span style="display: block; font-size:18px; font-size:18px">草莓奶油蛋糕</span>
+            <span style="display: block; font-size:10px">甜润奶油，与草莓的自然甜度搭配</span>
+            <ul>
+                <!-- 设置小椭圆，#684029dashed 虚线，solid实线，-->
+                <li
+                    style="float: left; font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate  solid; margin-left: -40px">
+                    情侣></li>
+                <li
+                    style="float: left; font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate  solid; margin-left: 10px">
+                    爱到底></li>
+                <li
+                    style="float: left; font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate  solid; margin-left: 10px">
+                    按时></li>
+            </ul>
+            <div style="border: 1px #684029 dashed"></div>
+            <!--  -->
+            <div>
+                <span style=" font-size:10px; margin-right : 60px">¥228.0/2.0磅</span>
+                <a style=" font-size:10px;  ">加入购物车</a>
+            </div>
+
+        </li>
+        <li class="lis">
+            <img src="/21Cake/images/可可岛.png" style="width: 100%; height: 230px; ">
+            <!-- <div style="width: 100%; height: 230px; background: black"></div> -->
+            <span style="display: block; font-size:18px">可可岛</span>
+            <span style="display: block;font-size:10px">可可是一种甜蜜的红色果浆</span>
+            <ul>
+                <!-- 设置小椭圆，#684029dashed 虚线，solid实线，-->
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: -40px">
+                    情侣></li>
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate  solid; margin-left: 10px">
+                    爱到底></li>
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px  chocolate  solid; margin-left: 10px">
+                    爱到底></li>
+
+            </ul>
+            <div style="border: 1px #684029 dashed"></div>
+            <!--  -->
+            <div>
+                <span style=" font-size:10px; margin-right : 60px">¥228.0/2.0磅</span>
+                <a style=" font-size:10px;  ">加入购物车</a>
+            </div>
+        </li>
+        <li class="lis">
+            <img src="/21Cake/images/栗蓉暗香.png" style="width: 100%; height: 230px; ">
+            <!-- <div style="width: 100%; height: 230px; background: black"></div> -->
+            <span style="display: block; font-size:18px">栗蓉暗香</span>
+            <span style="display: block;font-size:10px">栗蓉毛线球，点缀比利时黑巧克力</span>
+            <ul>
+                <!-- 设置小椭圆，#684029dashed 虚线，solid实线，-->
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: -40px">
+                    爱到底></li>
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: 10px">
+                    按时></li>
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: 10px">
+                    情侣></li>
+            </ul>
+            <div style="border: 1px #684029 dashed"></div>
+            <!--  -->
+            <div>
+                <span style=" font-size:10px; margin-right : 60px">¥228.0/2.0磅</span>
+                <a style=" font-size:10px;  ">加入购物车</a>
+            </div>
+        </li>
+        <li class="lis">
+            <img src="/21Cake/images/小重组.png" style="width: 100%; height: 230px; ">
+            <!-- <div style="width: 100%; height: 230px; background: black"></div> -->
+            <span style="display: block; font-size:18px">小重组</span>
+            <span style="display: block;font-size:10px">均一，轻褐的千层酥，三种“重组可能”</span>
+            <ul>
+                <!-- 设置小椭圆，#684029dashed 虚线，solid实线，-->
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: -40px">
+                    情侣></li>
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: 10px">
+                    爱到底></li>
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: 10px">
+                    按时></li>
+            </ul>
+            <div style="border: 1px #684029 dashed"></div>
+            <!--  -->
+            <div>
+                <span style=" font-size:10px; margin-right : 60px">¥228.0/2.0磅</span>
+                <a style=" font-size:10px;  ">加入购物车</a>
+            </div>
+        </li>
+    </ul>
+    <!-- 生日专区 -->
+    <h4 style="font-size: 20px;width: 80%; margin: 30px auto">生日<span style="font-size: 16px">/专区</span></h4>
+    <div class=fordiv>
+        <img src="/21Cake/images/生日专区.jpg">
+    </div>
+    <ul style="width: 80%; height: 350px;margin: 30px auto; display: block">
+        <li class="lis">
+            <img src="/21Cake/images/百利甜情人.png" style="width: 100%; height: 230px;">
+            <!-- <div style="width: 100%; height: 230px; background: black"></div> -->
+            <span style="display: block; font-size:18px; font-size:18px">百利甜情人</span>
+            <span style="display: block; font-size:10px">新切的水果与刚折的玫瑰，甜美、渐浓</span>
+            <ul>
+                <!-- 设置小椭圆，#684029dashed 虚线，solid实线，-->
+                <li
+                    style="float: left; font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate  solid; margin-left: -40px">
+                    情侣></li>
+                <li
+                    style="float: left; font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate  solid; margin-left: 10px">
+                    爱到底></li>
+                <li
+                    style="float: left; font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate  solid; margin-left: 10px">
+                    按时></li>
+            </ul>
+            <div style="border: 1px #684029 dashed"></div>
+            <!--  -->
+            <div>
+                <span style=" font-size:10px; margin-right : 60px">¥228.0/2.0磅</span>
+                <a style=" font-size:10px;  ">加入购物车</a>
+            </div>
+        </li>
+        <li class="lis">
+            <img src="/21Cake/images/榴莲飘飘.png" style="width: 100%; height: 230px; ">
+            <!-- <div style="width: 100%; height: 230px; background: black"></div> -->
+            <span style="display: block; font-size:18px">榴莲飘飘</span>
+            <span style="display: block;font-size:10px">丰厚乳脂奶油，打入足量榴莲果肉</span>
+            <ul>
+                <!-- 设置小椭圆，#684029dashed 虚线，solid实线，-->
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: -40px">
+                    情侣></li>
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate  solid; margin-left: 10px">
+                    爱到底></li>
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px  chocolate  solid; margin-left: 10px">
+                    爱到底></li>
+
+            </ul>
+            <div style="border: 1px #684029 dashed"></div>
+            <!--  -->
+            <div>
+                <span style=" font-size:10px; margin-right : 60px">¥228.0/2.0磅</span>
+                <a style=" font-size:10px;  ">加入购物车</a>
+            </div>
+        </li>
+        <li class="lis">
+            <img src="/21Cake/images/黑白巧克力慕斯.png" style="width: 100%; height: 230px; ">
+            <!-- <div style="width: 100%; height: 230px; background: black"></div> -->
+            <span style="display: block; font-size:18px"> 黑白巧克力慕斯 </span>
+            <span style="display: block;font-size:10px">卡通定制撒粉，简单、柔软</span>
+            <ul>
+                <!-- 设置小椭圆，#684029dashed 虚线，solid实线，-->
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: -40px">
+                    爱到底></li>
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: 10px">
+                    按时></li>
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: 10px">
+                    情侣></li>
+            </ul>
+            <div style="border: 1px #684029 dashed"></div>
+            <!--  -->
+            <div>
+                <span style=" font-size:10px; margin-right : 60px">¥228.0/2.0磅</span>
+                <a style=" font-size:10px;  ">加入购物车</a>
+            </div>
+        </li>
+        <li class="lis">
+            <img src="/21Cake/images/枣儿.png" style="width: 100%; height: 230px; ">
+            <!-- <div style="width: 100%; height: 230px; background: black"></div> -->
+            <span style="display: block; font-size:18px"> 枣儿</span>
+            <span style="display: block;font-size:10px">红枣奶油戚风，与姜撞奶慕斯</span>
+            <ul>
+                <!-- 设置小椭圆，#684029dashed 虚线，solid实线，-->
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: -40px">
+                    情侣></li>
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: 10px">
+                    爱到底></li>
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: 10px">
+                    按时></li>
+            </ul>
+            <div style="border: 1px #684029 dashed"></div>
+            <!--  -->
+            <div>
+                <span style=" font-size:10px; margin-right : 60px">¥228.0/2.0磅</span>
+                <a style=" font-size:10px;  ">加入购物车</a>
+            </div>
+        </li>
+    </ul>
+    <!-- 聚会专区 -->
+    <h4 style="font-size: 20px;width: 80%; margin: 30px auto">聚会<span style="font-size: 16px">/专区</span></h4>
+    <div class=fordiv>
+        <img src="/21Cake/images/聚会.jpg">
+    </div>
+    <ul style="width: 80%; height: 350px;margin: 30px auto; display: block">
+        <li class="lis">
+            <img src="/21Cake/images/口味切块.png" style="width: 100%; height: 230px;">
+            <!-- <div style="width: 100%; height: 230px; background: black"></div> -->
+            <span style="display: block; font-size:18px; font-size:18px">百利甜情人</span>
+            <span style="display: block; font-size:10px">新切的水果与刚折的玫瑰，甜美、渐浓</span>
+            <ul>
+                <!-- 设置小椭圆，#684029dashed 虚线，solid实线，-->
+                <li
+                    style="float: left; font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate  solid; margin-left: -40px">
+                    情侣></li>
+                <li
+                    style="float: left; font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate  solid; margin-left: 10px">
+                    爱到底></li>
+                <li
+                    style="float: left; font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate  solid; margin-left: 10px">
+                    按时></li>
+            </ul>
+            <div style="border: 1px #684029 dashed"></div>
+            <!--  -->
+            <div>
+                <span style=" font-size:10px; margin-right : 60px">¥228.0/2.0磅</span>
+                <a style=" font-size:10px;  ">加入购物车</a>
+            </div>
+        </li>
+        <li class="lis">
+            <img src="/21Cake/images/黑白巧克力慕斯.png" style="width: 100%; height: 230px; ">
+            <!-- <div style="width: 100%; height: 230px; background: black"></div> -->
+            <span style="display: block; font-size:18px">榴莲飘飘</span>
+            <span style="display: block;font-size:10px">丰厚乳脂奶油，打入足量榴莲果肉</span>
+            <ul>
+                <!-- 设置小椭圆，#684029dashed 虚线，solid实线，-->
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: -40px">
+                    情侣></li>
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate  solid; margin-left: 10px">
+                    爱到底></li>
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px  chocolate  solid; margin-left: 10px">
+                    爱到底></li>
+
+            </ul>
+            <div style="border: 1px #684029 dashed"></div>
+            <!--  -->
+            <div>
+                <span style=" font-size:10px; margin-right : 60px">¥228.0/2.0磅</span>
+                <a style=" font-size:10px;  ">加入购物车</a>
+            </div>
+        </li>
+        <li class="lis">
+            <img src="/21Cake/images/朗姆芝士.png" style="width: 100%; height: 230px; ">
+            <!-- <div style="width: 100%; height: 230px; background: black"></div> -->
+            <span style="display: block; font-size:18px"> 黑白巧克力慕斯 </span>
+            <span style="display: block;font-size:10px">卡通定制撒粉，简单、柔软</span>
+            <ul>
+                <!-- 设置小椭圆，#684029dashed 虚线，solid实线，-->
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: -40px">
+                    爱到底></li>
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: 10px">
+                    按时></li>
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: 10px">
+                    情侣></li>
+            </ul>
+            <div style="border: 1px #684029 dashed"></div>
+            <!--  -->
+            <div>
+                <span style=" font-size:10px; margin-right : 60px">¥228.0/2.0磅</span>
+                <a style=" font-size:10px;  ">加入购物车</a>
+            </div>
+        </li>
+        <li class="lis">
+            <img src="/21Cake/images/冻慕斯.png" style="width: 100%; height: 230px; ">
+            <!-- <div style="width: 100%; height: 230px; background: black"></div> -->
+            <span style="display: block; font-size:18px"> 枣儿</span>
+            <span style="display: block;font-size:10px">红枣奶油戚风，与姜撞奶慕斯</span>
+            <ul>
+                <!-- 设置小椭圆，#684029dashed 虚线，solid实线，-->
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: -40px">
+                    情侣></li>
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: 10px">
+                    爱到底></li>
+                <li
+                    style="float: left;font-size:5px; padding:2px 10px 2px 10px; border-radius: 100px; border: 1px chocolate solid; margin-left: 10px">
+                    按时></li>
+            </ul>
+            <div style="border: 1px #684029 dashed"></div>
+            <!--  -->
+            <div>
+                <span style=" font-size:10px; margin-right : 60px">¥228.0/2.0磅</span>
+                <a style=" font-size:10px;  ">加入购物车</a>
+            </div>
+        </li>
+    </ul>
+
+    <!-- 活动门 -->
+    <div class="salediv">
+        <h4 style="font-size: 20px;width: 80%; margin: 30px auto">活动门<span style="font-size: 16px">/是被吸引了吧</span></h4>
+        <ul class=saleul>
+            <li>
+                <img src="images/新客专享.jpg">
+            </li>
+        </ul>
+    </div>
+    <!-- 二一客 -->
+    <div>
+        <h4 style="font-size: 20px;width: 80%; margin: 30px auto">二一客
+            <span style="font-size: 16px">/文章</span>
+            <a href="/">查看更多&nbsp;&gt;</a>
+        </h4>
+        <ul class=keul>
+            <li>
+                <a href="">
+                    <img src="images/冬季刊.jpg">
+                    <h4 style="font-size: 24px">冬季刊·进博会</h4>
+                    <p>
+                        <span></span>
+                        <span>阅读全文</span>
+                    </p>
+                </a>
+
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/二一志秋刊.jpg">
+                    <h4 style="font-size: 24px">廿一志秋刊·客服Q&A</h4>
+                    <p>
+                        <span></span>
+                        <span>阅读全文</span>
+                    </p>
+                </a>
+
+            </li>
+        </ul>
+    </div>
+    <!-- 底部导航 -->
+    <div class="shade"></div>
+    <div class="footer">
+        <img class="footer-logo" src="images/21cake_logo.png" height="36" width="96" alt="">
+        <div class="footer-nav">
+            <a href="">联系我们</a>
+            <span>|</span>
+            <a href="">订购帮助</a>
+            <span>|</span>
+            <a href="">企业合作</a>
+            <span>|</span>
+            <a href="">生产经营资质</a>
+            <span>|</span>
+            <a href="">公告专区</a>
+        </div>
+        <div class="footer-weibo">
+            <a href=" " target=" ">
+                <img src="">
+            </a>
+            <a class="footer-weixin">
+                <div class="footer-erweima">
+                    <img src="">
+                </div>
+                <img src=" ">
+            </a>
+            <a class="footer-app">
+                <div class="footer-app">
+                    <img src=" ">
+                </div>
+                APP
+            </a>
+        </div>
+
+        <div class="footer-text">
+            <span>订购专线：400 650 2121（服务时间 08:00–22:00）</span>
+            <span>客服电话：021-23099721（全国） | kefu@21cake.com（邮箱）</span>
+            <span>杭州/广州：提前5小时预订；北京：提前6小时预订；上海：提前5.5-6小时预订；天津/苏州/无锡/深圳：提前8小时预订（部分偏远地区除外，当日22点以后订单，于次日8点开始审核） </span>
+            <span>当日蛋糕配送截止下单时间：北京：16:50；上海：16:30；杭州/广州：13:50；天津：10:30；苏州/无锡/深圳：11:00</span>
+            <span>网站注册公司名称: 北京廿一客食品有限公司 地址: 北京市北京经济技术开发区兴海二街5号院3号楼 </span>
+        </div>
+        <div class="footer-copyright">
+            <span>Copyright© 21Cake蛋糕官网商城 2007-2018, 版权所有 <a style="color: #9a9a9a" target="_blank"
+                    href="http://www.miitbeian.gov.cn/">京ICP备14006254号-1</a></span>
+        </div>
+    </div>
+
+</body>
+<script src="https://www.swiper.com.cn/dist/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+</html>

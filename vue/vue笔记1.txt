@@ -1,0 +1,49 @@
+jquery 一梭子代码就出来，事件驱动的框架
+Vue 一块json 就完事 有点像angular 数据驱动
+
+mvvm
+只有ie8以上才会兼容
+使用vue第一步
+引入vue
+new vue({
+	json
+	})
+
+el -> vue 输出的作用域
+data ->输出的数据
+{{}} ->在作用域里面放入咱们输出的模板，模板里放入data里面你定义的变量
+
+vue常用指令
+angular ng-show ng-repeat ng-model双向绑定
+//true 显示
+
+v-show display true/false 显示/隐藏
+
+josn ->键值对
+左边是键 右边是值
+
+v-for {{$index}}=> 索引值
+{{$key}}=>key值
+
+双向绑定 
+数据和输出进行绑定
+v-model
+
+事件
+v-on:click
+@click
+
+事件对象
+$event
+
+默认第一个参数就是咱们的事件对象
+
+事件冒泡
+防止冒泡：三种方法
+//event.cancelBubble=true; 方法一
+//event.stopPropagation(); 方法二
+//@click.stop推荐
+
+组织默认事件
+1.event.preventDefault
+2.@click.prevent 推荐

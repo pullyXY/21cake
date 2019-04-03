@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="vue.min.js"></script>
+    <style type="text/css">
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: black;
+        }
+    </style>
+</head>
+<!-- 不显示弹框 -->
+
+<body @click='bodyEvent'>
+    <div @click='divEvent'></div>
+    <!-- <div @click.stop='divEvent'></div>方法三 -->
+
+
+    <script type="text/javascript">
+        new Vue({
+            el:'body',
+            methods: {
+                bodyEvent: function () {
+                    alert: ('我是body');
+                },
+                divEvent: function (event) {
+                    alert: ('我是div');
+                    //取消显示我是div
+                    //event.cancelBubble=true; 方法一
+                    //event.stopPropagation(); 方法二
+
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
